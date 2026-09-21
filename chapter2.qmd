@@ -281,7 +281,7 @@ The same principle works if we have very small numbers, for example $\log(0.0022
 :::
 
 
-### Exercises with logarythm examples.
+### Exercises with logarithm examples.
 
 #### Self check on our learning so far.
 
@@ -311,7 +311,7 @@ $\textrm{pH} = -\log {\{H^+\}}$
 Our concentration may also be written as 5.59 $\times$ 10$^{-6}$, this value is less than 1, so we will gain a significnant figure.
 :::
 
-#### Self assessment question on significant figures with logarythms.
+#### Self assessment question on significant figures with logarithms.
 
 ## Significant figures in exponents, powers and roots. {#sec-sfpowers}
 
@@ -336,7 +336,7 @@ V = 48.4 cm$^{3}$
 
 This principle stands with any power, be it integers, fractions (square and cube roots), or negative powers. The number of significant figures in our answer should be the same as the number of significant figures in the value we are operating on.
 
-If you recall, in some circumstances when taking logarythms we sometimes gained a significant figure. When taking exponents (the reciprocal function of logs) then this means that we sometimes need to loose a significant figure.
+If you recall, in some circumstances when taking logarithms we sometimes gained a significant figure. When taking exponents (the reciprocal function of logs) then this means that we sometimes need to loose a significant figure.
 
 ::: {#tip-scales .callout-tip title="Significant figures with exponents."}
 When taking an antilog (so for example $10^x$ or $e^x$) we should retain the same number of significant figures if our exponent is between -1 and 1.
