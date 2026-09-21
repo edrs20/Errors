@@ -254,30 +254,48 @@ Please remember you can refresh this question.
 Significant figures in logs and lns are a little different to the rules for addition, subtraction, multiplication and division because we have to think about the 'value' when accounting for how many significant figures we have in our answer.
 
 ::: {#tip-scales .callout-tip title="Significant figures in logs and lns."}
-When taking logs we usually gain 1 significant figure, however if the ‘logged value’ is between 0 and the base then we do not gain a significant figure.
+
+When we take the log of a value, lets call it $x$, say $y = log_{a}(x)$ the significance either:
+- increases by 1 if $x$ is greater than the base i.e. $x > a $ or $x < \frac{1}{a}$.
+- stays the same if $x$ is less than the base i.e. $1/a < x < a$.
+
 :::
 
 Practically what does this mean? and why the do we sometimes gain a significant figure? The following example using $\log_{10}$ will help to explain this.
 
-::: {.callout-caution title="Example of significant figures in logs and lns."}
+::: {.callout-caution title="Example of significant figures in logs"}
 
-Determine $\log (2.234)$, $\log(22.34)$ and $\log(223.4)$ to the correct number of significant figures.
+Determine $\log (2.234)$, $\log(22.34)$ and $\log(0.002234)$ to the correct number of significant figures.
 
-Our first example is $\log(2.234)$. The value of $\log(2.234)$ is 0.3490831688.... 
+Our first example is $\log(2.234)$ since $2.234$ is between $\frac{1}{10}$ and $10$ we keep the same level of significance. 
 
-The value we are taking the log of has 4 significant figures, so our answer should have 4 significant figures. Therefore we report our answer as 0.3491.
+The value of $\log(2.234)$ is 0.3490831688.... Therefore we report our answer as $0.3491$.
 
-Now, if I take the log of 22.34 I can also write this as $\log(2.234 \times 10^1)$.
 
-Using our 'rules of logs', we can write this as $\log(2.234) + \log(10^1) = 0.3491 + 1 = 1.3491$.
+Next we have $\log(22.34)$, since $22.34$ is greater than $10$ we gain a significant figure.
 
-Since our value of $\log(10^1)$ is an exact value, it can be considered to have infinite significant figures, and we can add these values according to the rules in @sec-sfaddsub.
+So we have $\log(22.34) = 1.3491$.
 
-Finally, if I take the log of 223.4 I can also write this as $\log(2.234 \times 10^2)$. The value we are taking the log of has 4 significant figures, so our answer should have 4 significant figures. Therefore we report our answer as 2.3491.
+Lastly we have $\log(0.002234)$ which since it lis less that $\frac{1}{10}$ we gain a significant figure again $\log(0.002234) = -2.6509$.
+:::
 
-You can see why we gain a significant figure when taking the log of a value greater than 10, but not when taking the log of a value less than 10. The 'value' of the number we are taking the log of is important in determining how many significant figures we have in our answer.
+::: {.callout-caution title="Why in he increase of significance?" collapse="true"}
 
-The same principle works if we have very small numbers, for example $\log(0.002234)$ which we can write as $\log(2.234 \times 10^{-3}) = \log(2.234) + \log(10^{-3}) = 0.3491 - 3 = -2.6509$.
+The incresase in significance comes from log rules and the addtion rule that we saw earlier @sec-sfaddsub.
+
+For example consider $\log_{10}(53)$
+
+This can be written as log less than the base and a power of $10$, $\log_{10}(53) = \log_{10}(5.3 \times 10^1)$
+
+Splitting this up using log rules we have $\log_{10}(5.3 \times 10^1) = \log_{10}(5.3) + \log_{10}(10^1)$
+
+The frist part: $\log_{10}(5.3) = 0.72427587$ which we write as $\log_{10}(5.3) = 0.72$ we keep the same level of significance as we are just transforming the value.
+
+The Second part: $\log_{10}(10^1) = 1$ which we can consider to have infinite significant figures.
+
+Now we add both parts using the addition rule of keeping the minimum number of decimal places $\log_{10}(5.3) + \log_{10}(10^1) = 0.72 + 1 = 1.72$
+
+This has the effect of increasing the number of significant figures in our answer.
 :::
 
 
